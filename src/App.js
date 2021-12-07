@@ -3,10 +3,12 @@ import { ComProp } from "./components/basicos/ComProp";
 
 function App() {
     return (
-        <div className="App">
+        //<div className="App">
+        <>
             <MeuComponente></MeuComponente>
             <ComProp aluno="Pedro" materia="Matemática" nota={5.6}></ComProp>
-        </div>
+        </>
+        //</div>
     );
 }
 
