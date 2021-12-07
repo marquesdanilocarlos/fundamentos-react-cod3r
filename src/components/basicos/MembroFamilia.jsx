@@ -1,4 +1,4 @@
-export function Membro(props) {
+export function MembroFamilia(props) {
     return (
         <div>
             <div>

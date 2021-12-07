@@ -4,13 +4,18 @@ import { Aleatorio } from "./components/basicos/Aleatorio";
 import { Card } from "./components/Layout/Card";
 import "./styles/App.css";
 import { Familia } from "./components/basicos/Familia";
+import { MembroFamilia } from "./components/basicos/MembroFamilia";
 
 export default function App() {
     return (
         <div className="App">
             <div className="cards">
                 <Card titulo="#05 - Componente com filhos" color="#774699">
-                    <Familia sobreNome="Gomes"></Familia>
+                    <Familia sobreNome="Gomes">
+                        <MembroFamilia nome="Danilo"></MembroFamilia>
+                        <MembroFamilia nome="Arlindo"></MembroFamilia>
+                        <MembroFamilia nome="Juvenal"></MembroFamilia>
+                    </Familia>
                 </Card>
 
                 <Card
