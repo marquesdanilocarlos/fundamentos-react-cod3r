@@ -3,11 +3,16 @@ import { ComProp } from "./components/basicos/ComProp";
 import { Aleatorio } from "./components/basicos/Aleatorio";
 import { Card } from "./components/Layout/Card";
 import "./styles/App.css";
+import { Familia } from "./components/basicos/Familia";
 
 export default function App() {
     return (
         <div className="App">
             <div className="cards">
+                <Card titulo="#05 - Componente com filhos" color="#774699">
+                    <Familia sobreNome="Gomes"></Familia>
+                </Card>
+
                 <Card
                     titulo="#03 - Desafio de número Aleatório"
                     color="#7cb5e9"
