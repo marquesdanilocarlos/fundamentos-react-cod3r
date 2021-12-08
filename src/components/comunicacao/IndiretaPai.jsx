@@ -1,21 +1,22 @@
+import { useState } from "react";
 import { IndiretaFilho } from "./IndiretaFilho";
 
 export function IndiretaPai() {
-    let dadosIniciais = { nome: "?", idade: 0, nerd: false };
-    let { nome, idade, nerd } = dadosIniciais;
+    const [nome, setNome] = useState("?");
+    const [idade, setIdade] = useState(0);
+    const [nerd, setNerd] = useState(false);
 
-    function fornecerInformacoes(nomeParam, idadeParam, nerdParam) {
-        nome = nomeParam;
-        idade = idadeParam;
-        nerd = nerdParam;
-        console.log(nome, idade, nerd);
+    function fornecerInformacoes(nome, idade, nerd) {
+        setNome(nome);
+        setIdade(idade);
+        setNerd(nerd);
     }
 
     return (
         <div>
             <div>{nome}</div>
             <div>{idade}</div>
-            <div>{nerd}</div>
+            <div>{nerd ? "Verdadeiro" : "Falso"}</div>
             <IndiretaFilho quandoClicar={fornecerInformacoes} />
         </div>
     );
