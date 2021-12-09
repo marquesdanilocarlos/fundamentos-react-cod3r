@@ -13,11 +13,16 @@ import { DiretaPai } from "./components/comunicacao/DiretaPai";
 import { IndiretaPai } from "./components/comunicacao/IndiretaPai";
 import { Input } from "./components/formularios/input";
 import { Contador } from "./components/contador/Contador";
+import { Mega } from "./components/mega/Mega";
 
 export default function App() {
     return (
         <div className="App">
             <div className="cards">
+                <Card titulo="#13 - Desafio: Números Mega Sena" color="#b1d823">
+                    <Mega quantidadeNumeros={6} />
+                </Card>
+
                 <Card titulo="#12 - Comunicação indireta" color="#d8238d">
                     <Contador numeroInicial={10} passo={5} />
                 </Card>
