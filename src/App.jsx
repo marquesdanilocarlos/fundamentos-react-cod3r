@@ -11,11 +11,16 @@ import { ParOuImpar } from "./components/condicional/ParOuImpar";
 import { UsuarioInfo } from "./components/condicional/UsuarioInfo";
 import { DiretaPai } from "./components/comunicacao/DiretaPai";
 import { IndiretaPai } from "./components/comunicacao/IndiretaPai";
+import { Input } from "./components/formularios/input";
 
 export default function App() {
     return (
         <div className="App">
             <div className="cards">
+                <Card titulo="#11 - Comunicação indireta" color="#23d89c">
+                    <Input />
+                </Card>
+
                 <Card titulo="#10 - Comunicação indireta" color="#d82323">
                     <IndiretaPai />
                 </Card>
